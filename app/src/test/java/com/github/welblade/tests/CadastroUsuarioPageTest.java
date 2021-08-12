@@ -1,8 +1,8 @@
-package com.github.welblade;
+package com.github.welblade.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.github.welblade.pages.LoginPage;
+import com.github.welblade.pages.CadastroUsuarioPage;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -17,9 +17,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 @TestInstance(Lifecycle.PER_CLASS)
-public class LoginPageTest {
+public class CadastroUsuarioPageTest {
     private WebDriver driver;
-
+    
 
     @BeforeAll
     public void inicializar(){
@@ -27,12 +27,12 @@ public class LoginPageTest {
     }
 
     @Test
-    public void testarLoginPage(){
-        LoginPage page = new LoginPage(this.driver);
+    public void testarCadastrarUsuarioPage(){
+        CadastroUsuarioPage page = new CadastroUsuarioPage(this.driver);
         WebDriverWait wait = new WebDriverWait(this.driver, 5);
-
-        page.login();
         
+        page.cadastrar();
+
         wait.until(ExpectedConditions.presenceOfElementLocated(
             By.cssSelector("a[title='Orders'] span")
         ));

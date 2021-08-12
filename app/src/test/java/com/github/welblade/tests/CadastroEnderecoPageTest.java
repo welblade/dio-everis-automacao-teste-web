@@ -1,4 +1,4 @@
-package com.github.welblade;
+package com.github.welblade.tests;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
