@@ -6,8 +6,8 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
 
-    private WebDriver driver;
-    private Seletor seletor;
+    private final WebDriver driver;
+    private final Seletor seletor;
 
     public LoginPage(WebDriver driver){
         this.driver = driver;

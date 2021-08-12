@@ -19,10 +19,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 @TestInstance(Lifecycle.PER_CLASS)
 public class LoginPageTest {
     private WebDriver driver;
-    
+
 
     @BeforeAll
-    public void inicilizar(){
+    public void inicializar(){
         this.driver = new FirefoxDriver();
     }
 

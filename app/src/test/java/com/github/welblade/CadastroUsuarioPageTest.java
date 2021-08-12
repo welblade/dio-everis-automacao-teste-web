@@ -22,7 +22,7 @@ public class CadastroUsuarioPageTest {
     
 
     @BeforeAll
-    public void inicilizar(){
+    public void inicializar(){
         this.driver = new FirefoxDriver();
     }
 
